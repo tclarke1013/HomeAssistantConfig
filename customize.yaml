@@ -1,0 +1,46 @@
+sensor.speedtest:
+  hidden: False
+  homebridge_hidden: True
+  
+
+switch.wemo:
+  friendly_name: 'Sloane Night Light'
+  hidden: False
+  homebridge_hidden: False
+  icon: mdi:power-plug
+  
+group.all_scripts:
+  homebridge_hidden: True
+
+group.all_remotes:
+  hidden: False
+  friendly_name: 'All Remotes'
+
+group.all_switches:
+  hidden: False
+  friendly_name: 'All Switches'
+
+sensor.precip_intensity:
+  homebridge_hidden: True
+
+sensor.precip_intensity_max:
+  homebridge_hidden: True
+  
+sensor.temperature:
+  homebridge_hidden: False
+
+sensor.wind_speed:
+  homebridge_hidden: True
+
+sensor.cloud_cover:
+  homebridge_hidden: True
+
+sensor.humidity:
+  homebridge_hidden: False
+
+sensor.minutely_summary:
+  homebridge_hidden: True
+
+sensor.uv_index:
+  homebridge_hidden: True
+  

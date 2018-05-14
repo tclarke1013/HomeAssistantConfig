@@ -1,0 +1,27 @@
+arm_home:
+  alias: Arm Home
+  sequence:
+    - service: alarm_control_panel.alarm_arm_home
+      entity_id: 
+        - alarm_control_panel.alarmcom
+      data:
+        code: !secret alarm_code
+        
+arm_away:
+  alias: Arm Away
+  sequence:
+    - service: alarm_control_panel.alarm_arm_away
+      entity_id: 
+        - alarm_control_panel.alarmcom
+      data:
+        code: !secret alarm_code
+ 
+disarm:
+  alias: Disarm
+  sequence:
+    - service: alarm_control_panel.alarm_disarm
+      entity_id: 
+        - alarm_control_panel.alarmcom
+      data:
+        code: !secret alarm_code
+ 

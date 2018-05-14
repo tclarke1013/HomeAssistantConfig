@@ -1,0 +1,47 @@
+- platform: speedtest
+  minute: 30
+  hour:
+    - 0
+    - 6
+    - 12
+    - 18
+  monitored_conditions:
+    - download
+    - upload
+
+- platform: darksky
+  api_key: !secret forecast_key
+  monitored_conditions:
+    - summary
+    - precip_type
+    - precip_intensity
+    - precip_intensity_max
+    - precip_probability
+    - temperature
+    - dew_point
+    - wind_speed
+    - wind_bearing
+    - cloud_cover
+    - humidity
+    - nearest_storm_distance
+    - minutely_summary
+    - pressure
+    - visibility
+    - ozone
+    - uv_index
+    - apparent_temperature
+    - icon
+
+- platform: wunderground
+  api_key: !secret wunderground_key
+  latitude: !secret homeassistant_latitude
+  longitude: !secret homeassistant_longitude
+  monitored_conditions:
+    - alerts
+  
+  
+#- platform: mqtt
+#  name: "temperature"
+#  state_topic: "smartthings/My ecobee/temperature"
+#  unit_of_measurement: "C"
+  

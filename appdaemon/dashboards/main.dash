@@ -1,0 +1,146 @@
+title: Main
+widget_dimensions: [120, 120]
+widget_margins: [5, 5]
+widget_size: [1,1]
+columns: 8
+global_parameters:
+  use_comma: 0
+  precision: 1
+  use_hass_icon: 1
+  dash_force_compile: 1
+
+clock:
+  widget_type: clock
+
+weather:
+  widget_type: weather
+  units: "&deg;C"
+
+wemo:
+  widget_type: switch
+  title: Sloane's Night Light
+  icon_on: mdi-lightbulb-on
+  icon_off: mdi-lightbulb-on
+  entity: switch.wemo
+
+garage_door:
+  widget_type: cover
+  title: Garage Door
+  entity: cover.garage_door_opener
+
+family_room_temperature:
+  widget_type: sensor
+  title: Family Room Temperature
+  units: "&deg;C"
+  entity: sensor.family_room_temperature
+  
+ecobee_temperature:
+  widget_type: sensor
+  title: Ecobee
+  units: "&deg;C"
+  entity: sensor.my_ecobee_temperature
+
+master_bedroom_temperature:
+  widget_type: sensor
+  title: Master Bedroom Temperature
+  units: "&deg;C"
+  entity: sensor.master_bedroom_temperature
+    
+basement_temperature:
+  widget_type: sensor
+  title: Basement Temperature
+  units: "&deg;C"
+  entity: sensor.basement_temperature
+
+ecobee_climate:
+  widget_type: climate
+  title: Ecobee Settings
+  units: "&deg;C"
+  precision: 1
+  step: 0.5  
+  entity: climate.my_ecobee
+
+entrance_alarm:
+  widget_type: alarm
+  title: Alarm Status
+  entity: alarm_control_panel.alarmcom
+  
+reload:
+  title: Reload
+  widget_type: reload
+
+tim_presence:
+  widget_type: device_tracker
+  title: Tim
+  device: timsiphone7plusclarke
+
+sunrise:
+  widget_type: sensor
+  title: Sunrise
+  entity: 
+label:
+  widget_type: label
+  title: Home Automation Dashboard
+  title2: v0.1
+  text: William Lott Manor
+
+apple4:
+  widget_type: media_player
+  title: Apple TV 4
+  entity: media_player.family_room
+
+apple3:
+  widget_type: media_player
+  title: Apple TV 3
+  truncate_name: 35
+  entity: media_player.bedroom_apple_tv
+
+load_settings:
+  widget_type: navigate
+  title: Settings
+  dashboard: settings
+  icon_inactive: mdi-wrench
+
+load_family_room:
+  widget_type: navigate
+  title: Family Room
+  dashboard: settings
+  icon_inactive: mdi-account-multiple
+
+load_master_bedroom:
+  widget_type: navigate
+  title: Master Bedroom
+  dashboard: settings
+  icon_inactive: mdi-hotel
+  
+load_basement:
+  widget_type: navigate
+  title: Basement
+  dashboard: settings
+  icon_inactive: mdi-movie-roll
+
+load_asia_room:
+  widget_type: navigate
+  title: Asia's Room
+  dashboard: settings
+  icon_inactive: mdi-hotel
+
+load_sloane_room:
+  widget_type: navigate
+  title: Sloane's Room
+  dashboard: settings
+  icon_inactive: mdi-hotel
+
+load_garage:
+  widget_type: navigate
+  title: Garage
+  dashboard: settings
+  icon_inactive: mdi-garage
+
+layout:
+  - label(8x1)
+  - clock(3x2),weather(2x2), ecobee_temperature, family_room_temperature
+  -                          master_bedroom_temperature, basement_temperature
+  - ecobee_climate, entrance_alarm
+  - wemo, garage_door
+  - load_settings,load_family_room,load_master_bedroom ,load_asia_room,load_sloane_room,load_basement,load_garage,reload

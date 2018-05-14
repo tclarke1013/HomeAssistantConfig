@@ -1,0 +1,44 @@
+settings_label:
+  widget_type: label
+  title: Home Automation Dashboard
+  title2: Settings
+  text: Clarke Family Home
+
+load_dark_flower:
+  title: Skin Change
+  title2: Dark Flower
+  widget_type: navigate
+  dashboard: main
+  skin: dark_flower
+
+default:
+  title: Skin Change
+  title2: Default
+  widget_type: navigate
+  dashboard: main
+  skin: default
+
+load_blur_light:
+  title: Skin Change
+  title2: Blur Light
+  widget_type: navigate
+  dashboard: main
+  skin: blur_light
+
+load_clear_sky:
+  title: Skin Change
+  title2: Clear Sky
+  widget_type: navigate
+  dashboard: main
+  skin: clear_sky
+
+load_main_panel:
+  title: Main Panel
+  widget_type: navigate
+  icon: mdi-home
+  dashboard: main
+
+layout:
+  - settings_label(8x1)
+  - load_main_panel
+  - default, load_dark_flower, load_clear_sky, load_blur_light

@@ -1,0 +1,15 @@
+#
+# Main Arguments, all Optional
+#
+title: Settings
+widget_dimensions: [120, 120]
+widget_margins: [5, 5]
+widget_size: [1,1]
+columns: 8
+
+#
+# Includes Optional
+#
+
+layout:
+  - include: settings_panel
