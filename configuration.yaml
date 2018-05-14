@@ -71,8 +71,9 @@ http:
 # Enables the frontend
 frontend:
 
-#homekit:
-
+homekit:
+  auto_start: false
+  
 # Discover some devices automatically
 discovery:
     
