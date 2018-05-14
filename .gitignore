@@ -18,3 +18,5 @@ entity_registry.yaml
 homebridge/config.json
 
 homebridge/accessories/cachedAccessories
+
+appdaemon/appdaemon.yaml
