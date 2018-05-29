@@ -1,7 +1,7 @@
 # HomeAssistantConfig
 Home Assistant Configuration for a Smart Home 
 
-Home Assistant version: 69.0
+Home Assistant version: 69.1
 
 AppDaemon3 version: 1.1.0
 
@@ -16,10 +16,3 @@ AppDaemon3 version: 1.1.0
 - Wemo Smart Plug
 - Tradfri Gateway
 - Tradfri Switch
-
-# To Do Lists
-
-- Connect SkyBell Trim DoorBell to HA
-- Connect LG Washer and Dryer to HA
-- Connect Samsung Smartthings without Smartthings HUB to HA
-
