@@ -1,9 +1,9 @@
 # HomeAssistantConfig
 Home Assistant Configuration for a Smart Home 
 
-Home Assistant version: 69.1
+Home Assistant version: 70.0
 
-AppDaemon3 version: 1.1.0
+AppDaemon3 version: 1.1.1
 
 # Devices
 
@@ -16,3 +16,4 @@ AppDaemon3 version: 1.1.0
 - Wemo Smart Plug
 - Tradfri Gateway
 - Tradfri Switch
+- Tradfri Dimmer
