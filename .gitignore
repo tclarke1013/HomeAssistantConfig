@@ -21,15 +21,10 @@ homebridge/accessories/cachedAccessories
 
 appdaemon/appdaemon.yaml
 *.conf
-scripts.yaml
-scripts.yaml
 *.DS_Store
 .cloud/production_auth.json
-scripts.yaml
-scripts.yaml
 .homekit.state
 .uuid
-scripts.yaml
 appdaemon/dashboards/Hello.dash
 appdaemon/apps/hello.py
 appdaemon/apps/._apps.yaml
