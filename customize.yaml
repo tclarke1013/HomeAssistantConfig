@@ -9,9 +9,6 @@ switch.wemo:
   homebridge_hidden: False
   icon: mdi:power-plug
   
-group.all_scripts:
-  homebridge_hidden: True
-
 group.all_remotes:
   hidden: False
   friendly_name: 'All Remotes'
@@ -20,6 +17,19 @@ group.all_switches:
   hidden: False
   friendly_name: 'All Switches'
 
+group.all_scripts:
+  homebridge_hidden: True
+  hidden: False
+  friendly_name: 'All Scripts'
+  
+#group.all_automations:
+ # hidden: false
+ # friendly_name: 'All Automations'
+  
+group.all_covers:
+  hidden: false
+  friendly_name: 'All Covers'
+  
 sensor.precip_intensity:
   homebridge_hidden: True
 

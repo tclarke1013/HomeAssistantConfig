@@ -60,6 +60,12 @@ ecobee_climate:
   step: 0.5  
   entity: climate.my_ecobee
 
+ecobee_humidity:
+  widget_type: sensor
+  title: Humidity
+  units: "%"
+  entity: sensor.my_ecobee_humidity
+
 entrance_alarm:
   widget_type: alarm
   title: Alarm Status
@@ -139,8 +145,8 @@ load_garage:
 
 layout:
   - label(8x1)
-  - clock(3x2),weather(2x2), ecobee_temperature, family_room_temperature
-  -                          master_bedroom_temperature, basement_temperature
-  - ecobee_climate, entrance_alarm
+  - clock(3x2),weather(2x2), ecobee_temperature, family_room_temperature, ecobee_humidity
+  -                          master_bedroom_temperature, basement_temperature, ecobee_climate
+  - entrance_alarm
   - wemo, garage_door
   - load_settings,load_family_room,load_master_bedroom ,load_asia_room,load_sloane_room,load_basement,load_garage,reload

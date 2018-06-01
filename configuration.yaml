@@ -53,9 +53,9 @@ cloud:
 #      group.upstairs_lights:
 #        display_categories: LIGHT
 http:
-  api_password: !secret http_password
-  cors_allowed_origins:
-    - http://192.168.1.15:7080
+#  base_url: https://williamlottmanor.duckdns.org:8123
+#  ssl_certificate: /ssl/fullchain.pem
+#  ssl_key: /ssl/privkey.pem
     
   # Secrets are defined in the file secrets.yaml
   # api_password: !secret http_password
@@ -145,6 +145,12 @@ tts:
 
 ecobee:
 
+apple_tv:
+
+#ios:
+  
+tradfri:
+  host: 192.168.1.18
   
 group: !include groups.yaml
 automation: !include automations.yaml

@@ -1,0 +1,58 @@
+#=================================================
+# GROUPS
+#=================================================
+
+inside:
+  name: Inside
+  view: yes
+  #icon: mdi-house
+  entities:
+    - alarm_control_panel.alarmcom
+    - sensor.my_ecobee_temperature
+    - sensor.family_room_temperature
+    - sensor.master_bedroom_temperature
+    - sensor.basement_temperature
+    - sensor.my_ecobee_humidity
+    - climate.my_ecobee
+    - binary_sensor.basement_occupancy
+    - binary_sensor.master_bedroom_occupancy
+    - binary_sensor.family_room_occupancy
+    - binary_sensor.my_ecobee_occupancy
+    
+control:
+  name: Controls
+  view: yes
+  #icon: mdi-switch
+  entities:
+    - group.all_remotes
+    - group.all_switches
+    - group.all_scripts
+    - group.all_covers
+    - group.all_automations
+   
+outside:
+  name: Outside
+  view: yes
+  #icon: mdi-clouc
+  entities:
+    - weather.my_ecobee
+    - sensor.dark_sky_summary
+    - sensor.dark_sky_precip_type
+    - sensor.dark_sky_precip_intensity
+    - sensor.dark_sky_precip_intensity_max
+    - sensor.dark_sky_precip_probability
+    - sensor.dark_sky_temperature
+    - sensor.dark_sky_dew_point
+    - sensor.dark_sky_wind_speed
+    - sensor.dark_sky_wind_bearing
+    - sensor.dark_sky_cloud_cover
+    - sensor.dark_sky_humidity
+    - sensor.dark_sky_nearest_storm_distance
+    - sensor.dark_sky_minutely_summary
+    - sensor.dark_sky_pressure
+    - sensor.dark_sky_visibility
+    - sensor.dark_sky_ozone
+    - sensor.dark_sky_uv_index
+    - sensor.dark_sky_apparent_temperature
+    - sensor.dark_sky_icon
+    - sun.sun
