@@ -16,6 +16,13 @@ weather:
   widget_type: weather
   units: "&deg;C"
 
+sloane_light:
+  widget_type: light
+  title: Sloane's Room Light
+  icon_on: mdi-lightbulb-on
+  icon_off: mdi-lightbulb-on
+  entity: light.sloanes_room
+
 wemo:
   widget_type: switch
   title: Sloane's Night Light
@@ -23,6 +30,7 @@ wemo:
   icon_off: mdi-lightbulb-on
   entity: switch.wemo
 
+  
 garage_door:
   widget_type: cover
   title: Garage Door
@@ -148,5 +156,5 @@ layout:
   - clock(3x2),weather(2x2), ecobee_temperature, family_room_temperature, ecobee_humidity
   -                          master_bedroom_temperature, basement_temperature, ecobee_climate
   - entrance_alarm
-  - wemo, garage_door
+  - wemo, sloane_light, garage_door
   - load_settings,load_family_room,load_master_bedroom ,load_asia_room,load_sloane_room,load_basement,load_garage,reload
