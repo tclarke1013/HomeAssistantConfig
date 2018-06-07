@@ -53,9 +53,9 @@ cloud:
 #      group.upstairs_lights:
 #        display_categories: LIGHT
 http:
-#  base_url: https://williamlottmanor.duckdns.org:8123
-#  ssl_certificate: /ssl/fullchain.pem
-#  ssl_key: /ssl/privkey.pem
+  base_url: https://williamlottmanor.duckdns.org:8123
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
     
   # Secrets are defined in the file secrets.yaml
   # api_password: !secret http_password
