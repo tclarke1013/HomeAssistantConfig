@@ -23,6 +23,16 @@ sloane_light:
   icon_off: mdi-lightbulb-on
   entity: light.sloanes_room
 
+<<<<<<< HEAD
+=======
+family_room_lamp:
+  widget_type: light
+  title: Family Arc Lamp
+  icon_on: mdi-lightbulb-on
+  icon_off: mdi-lightbulb-on
+  entity: light.sloanes_room
+
+>>>>>>> f1bc70f529a6bb63dc229ed747ba2df0415694a8
 wemo:
   widget_type: switch
   title: Sloane's Night Light
@@ -83,11 +93,6 @@ reload:
   title: Reload
   widget_type: reload
 
-tim_presence:
-  widget_type: device_tracker
-  title: Tim
-  device: timsiphone7plusclarke
-
 sunrise:
   widget_type: sensor
   title: Sunrise
@@ -97,17 +102,6 @@ label:
   title: Home Automation Dashboard
   title2: v0.1
   text: William Lott Manor
-
-apple4:
-  widget_type: media_player
-  title: Apple TV 4
-  entity: media_player.family_room
-
-apple3:
-  widget_type: media_player
-  title: Apple TV 3
-  truncate_name: 35
-  entity: media_player.bedroom_apple_tv
 
 load_settings:
   widget_type: navigate
@@ -155,6 +149,11 @@ layout:
   - label(8x1)
   - clock(3x2),weather(2x2), ecobee_temperature, family_room_temperature, ecobee_humidity
   -                          master_bedroom_temperature, basement_temperature, ecobee_climate
+<<<<<<< HEAD
   - entrance_alarm
   - wemo, sloane_light, garage_door
+=======
+  - entrance_alarm, garage_door
+  - wemo, sloane_light, family_room_lamp
+>>>>>>> f1bc70f529a6bb63dc229ed747ba2df0415694a8
   - load_settings,load_family_room,load_master_bedroom ,load_asia_room,load_sloane_room,load_basement,load_garage,reload
